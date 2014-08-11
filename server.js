@@ -1,4 +1,7 @@
 var Hapi = require('hapi');
+var Mongoose = require('mongoose');
+
+Mongoose.connect('mongodb://localhost/peAuction');
 
 var server = new Hapi.Server(8080, "localhost");
 
@@ -41,14 +44,14 @@ server.route({
     }
 });
 
+server.start(function() {
+    console.log("server started @ " + server.info.uri);
+});
+
 server.route({
     path: '/*',
     method: 'GET',
     handler: function(request, reply) {
         reply.redirect('/#' + request.url);
     }
-});
-
-server.start(function() {
-    console.log("server started @ " + server.info.uri);
 });

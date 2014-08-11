@@ -18,8 +18,12 @@ peAuctionApp.config(['$routeProvider', '$locationProvider',
         templateUrl: 'partials/auction-detail.html',
         controller: 'ProductDetailCtrl'
       }).
+      when('/', {
+          templateUrl: 'partials/get-started.html',
+          controller: 'GetStartedCtrl'
+      }).
       otherwise({
-        redirectTo: '/products'
+        redirectTo: '/'
       });
       $locationProvider.html5Mode(true);
 

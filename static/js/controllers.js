@@ -2,6 +2,13 @@
 
 var peAuctionControllers = angular.module('peAuctionControllers', []);
 
+
+peAuctionControllers.controller('GetStartedCtrl', ['$scope',
+    function($scope) {
+        console.log('getting started');
+    }
+]);
+
 peAuctionControllers.controller('AuctionListCtrl', ['$scope', 'Phone',
     function($scope, Phone) {
         $scope.phones = Phone.query();
