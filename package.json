@@ -1,0 +1,35 @@
+{
+  "name": "auctionhaus",
+  "version": "0.0.1",
+  "description": "Silent Auction platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarahjanesllc-labs/auctionhaus.git"
+  },
+  "keywords": [
+    "bid",
+    "auction"
+  ],
+  "author": "Sarah Janes, LLC. <sarahjanesllc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarahjanesllc-labs/auctionhaus/issues"
+  },
+  "homepage": "https://github.com/sarahjanesllc-labs/auctionhaus",
+  "dependencies": {
+    "hapi": "^6.4.0",
+    "stylus": "^0.47.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-concat": "^2.3.4",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-stylus": "^1.3.0",
+    "gulp-uglify": "^0.3.1",
+    "http-server": "^0.6.1"
+  }
+}
