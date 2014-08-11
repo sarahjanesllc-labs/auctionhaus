@@ -26,10 +26,21 @@
 </head>
 
 <body>
-
-    <h2>Partnership Elementary Silent Auction</h2>
-    <div class="view-container">
-        <div ng-view class="view-frame"></div>
+    <h1 class="ui center aligned header">Partnership Elementary</h1>
+    <div class="ui two column divided page grid">
+        <div class="one wide column">
+            <div class="ui green vertical icon menu">
+                <a class="red item" href="/logout">
+                    <i class="icon sign out"></i>
+                    Finish
+                </a>
+            </div>
+        </div>
+        <div class="fifteen wide column">
+            <div class="view-container">
+                <div ng-view class="view-frame"></div>
+            </div>
+        </div>
     </div>
 
 </body>
